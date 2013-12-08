@@ -1,0 +1,129 @@
+@black: #444;
+@gray: #aaa;
+@white: #fff;
+
+// Josefin Sans
+// Maven Pro
+// Questrial
+// Abel
+// Karla
+// Advent Pro
+// Open Sans Condensed
+// Text Me One
+// Raleway
+@font-brand: "Josefin Sans";
+@font: "Tinos";
+
+@spacing: 250px;
+
+body {
+  background-color: @white;
+
+  text-align: center;
+  font-family: @font, serif;
+  font-size: 24px;
+  font-weight: 100;
+  color: @black;
+
+  cursor: default; // For Pekkis.
+}
+
+h1, h2, h3, h4 {
+  font-family: @font-brand, sans-serif;
+  font-size: 64px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: @black;
+}
+
+h2 {
+  font-size: 58px;
+}
+
+h3 {
+  font-size: 32px;
+  color: @gray;
+}
+
+p, ul {
+  margin-left: auto;
+  margin-right: auto;
+  padding: @spacing / 10 0 !important;
+}
+
+ul {
+  max-width: 100%;
+  list-style: none;
+  text-align: left;
+}
+
+section {
+  padding: @spacing 0;
+}
+
+footer {
+  padding: @spacing / 4 0;
+
+  background-color: #222;
+  color: @white;
+
+  .logo {
+    margin: 0 @spacing / 10;
+
+    text-transform: uppercase;
+    font-family: @font-brand;
+    font-weight: bold;
+    font-size: smaller;
+    letter-spacing: 1px;
+  }
+}
+
+#logo {
+  display: inline-block;
+  padding: @spacing / 20 @spacing / 10;
+
+  font-family: @font-brand;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: @white;
+
+  background-color: #222;
+}
+
+#customize {
+  background-image: url('../images/customizable.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+#order {
+  padding-bottom: @spacing / 3;
+}
+
+a.button {
+  padding: @spacing / 10;
+
+  color: @white;
+
+  background-color: #ccc;
+  background-color: goldenrod;
+  opacity: 0.5;
+  border-radius: 2px;
+
+  &:hover {
+    text-decoration: none;
+
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 48px;
+  }
+
+  section {
+    padding: @spacing / 1.5 0;
+  }
+}
